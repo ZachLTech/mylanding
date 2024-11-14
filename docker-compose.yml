@@ -1,10 +1,11 @@
-version: '3.3'
+version: '3'
+
 services:
-  zachltech_web_landing:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: site-zachltech-landing
-    restart: unless-stopped
+  site-mylanding:
+    build: .
     ports:
-      - 9800:3000
+      - "9795:80"
+    volumes:
+      - ./public:/usr/share/nginx/html
+    restart: unless-stopped
+

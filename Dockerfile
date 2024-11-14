@@ -1,13 +1,7 @@
-FROM node:latest
+FROM nginx:alpine
 
-COPY ./site /site
+COPY ./public /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
-WORKDIR /site
-
-RUN npm install
-
-RUN npm audit fix
-
-EXPOSE 3000
-
-CMD ["/bin/bash", "-c", "npx nuxt build;node .output/server/index.mjs"]
+EXPOSE 80
