@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>ZachLTech Socials</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/070428bd88.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/0daa30b3d0.js" crossorigin="anonymous"></script>
+    <script defer data-domain="zachl.tech" src="https://analytics.zachl.tech/js/script.js"></script>
+    <script src="./assets/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head__section" style="display: flex; flex-direction: column;">
+        <img src="./assets/myLogo.png" style="height: 6.5em; width: 6.5em;" class="logo" alt="Logo">
+        <div style="position: absolute;">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script>
+            function copyToClipboard() {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val("https://www.zachl.tech").select();
+            document.execCommand("copy");
+            $temp.remove();
+              
+            textSummary = document.getElementById("summary");
+            textSummary.innerHTML = "Copied to Clipboard."
+
+            setTimeout(function(){textSummary.innerHTML = ("I'm a freelance front-end web developer & software engineer")}, 1200);
+          }
+          
+          </script>
+          <button style="position: absolute;" class="share-button" type="button" title="Share my website? ツ" onclick="copyToClipboard()">
+            <svg style="width: 1.5em; height: 1.5em;">
+              <use href="#share-icon"></use>
+            </svg>
+          </button>
+          <svg class="hidden" style="width: 20px; height: 20px;">
+            <defs>
+              <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
+            </defs>
+          </svg>
+        </div>
+        <p id="summary" style="margin-top: 10px;">I'm a freelance full-stack web developer & software engineer</p>
+      </div>
+
+      <div class="social__links">
+        <ul id="item">
+
+          <li id="SITES" class="instagram">
+            <a href="https://sites.zachl.tech" target="_blank">
+              <span>
+                <h3>Lobby</h3>
+                <p>View a hub holding all of my public websites</p>
+              </span>
+              <i class="fa-regular fa-folder iconsmargin" style="color: #fafcff; position: absolute; "></i>
+            </a>
+          </li>
+
+          <li id="EMAIL" class="youtube">
+            <a href="mailto:zlopezzl2021@gmail.com?" target="_blank">
+              <span>
+                <h3>Gmail</h3>
+                <p>Email me for any questions or inquiries.</p>
+              </span>
+              <i class="fa-regular fa-envelope iconsmargin" style="color: #ffffff; position: absolute; "></i>
+            </a>
+          </li>
+          
+          <li id="LINKEDIN" class="telegram">
+            <a href="https://www.linkedin.com/in/zachary-lopez-304629243/" target="_blank">
+              <span>
+                <h3 style="color: #ffffff;">Linkedin</h3>
+                <p style="color: #ffffff;">View my professional profile.</p>
+              </span>
+              <i class="fa-brands fa-linkedin-in iconsmargin" style="color: #ffffff; position: absolute;"></i>
+            </a>
+          </li>
+          
+          <li id="GITHUB" class="github">
+            <a href="https://github.com/ZachLTech" target="_blank">
+              <span>
+                <h3>GitHub</h3>
+                <p>All my public code is stored here.</p>
+              </span>
+              <i class="fa fa-github iconsmargin" style="color: #ffffff; position: absolute;"></i>
+            </a>
+          </li>
+            
+          <li id="INSTAGRAM" class="insta">
+            <a href="https://www.instagram.com/playpxco/" target="_blank">
+              <span>
+                <h3>Instagram</h3>
+                <p>DM me if you want.</p>
+              </span>
+              <i class="fa-brands fa-instagram iconsmargin" style="color: #ffffff; position: absolute; "></i>
+            </a>
+          </li>
+
+          <li id="DISCORD" class="discord">
+            <a href="https://discord.com/users/829875896864866314" target="_blank">
+              <span>
+                <h3>Discord: zachisnotmyname</h3>
+                <p>You could also DM me here</p>
+              </span>
+              <i class="fa-brands fa-discord iconsmargindiscord" style="color: #ffffff; position: absolute;"></i>
+            </a>
+          </li>
+            
+          <li id="CODEPEN" class="telegram">
+            <a href="https://codepen.io/zachltech" target="_blank">
+              <span>
+                <h3>Codepen</h3>
+                <p>See my codepen for more web designs.</p>
+              </span>
+              <i class="fa-brands fa-codepen iconsmargin" style="color: #ffffff; position: absolute; "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
