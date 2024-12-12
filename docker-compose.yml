@@ -4,8 +4,7 @@ services:
   site-mylanding:
     build: .
     ports:
-      - "9795:80"
+      - "9792:80"
     volumes:
       - ./public:/usr/share/nginx/html
     restart: unless-stopped
-
